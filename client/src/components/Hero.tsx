@@ -5,11 +5,11 @@ import sealImage from "@assets/generated_images/digital_security_seal_shield_gol
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-slate-50 pt-16 pb-24 lg:pt-32 lg:pb-40">
+    <section className="relative overflow-hidden bg-slate-50 pt-10 pb-16 lg:pt-32 lg:pb-40">
       <div className="container-custom relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8 animate-in fade-in slide-in-from-bottom-8 duration-700">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-bold uppercase tracking-wide border border-blue-200">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div className="space-y-6 lg:space-y-8 animate-in fade-in slide-in-from-bottom-8 duration-700">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-[10px] md:text-xs font-bold uppercase tracking-wide border border-blue-200">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
@@ -17,7 +17,7 @@ export default function Hero() {
               Serviço Oficial Digital
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.1] tracking-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.1] tracking-tight">
               Prova de Vida Digital. <br />
               <span className="text-primary">Rápida, Segura e Autorizada.</span>
             </h1>

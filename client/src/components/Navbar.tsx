@@ -23,14 +23,14 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
-      <div className="container-custom flex h-20 items-center justify-between">
+      <div className="container-custom flex h-16 md:h-20 items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="h-10 w-10 rounded bg-gradient-to-br from-blue-700 to-blue-900 flex items-center justify-center text-white font-bold shadow-sm">
+          <div className="h-8 w-8 md:h-10 md:w-10 rounded bg-gradient-to-br from-blue-700 to-blue-900 flex items-center justify-center text-white font-bold shadow-sm text-xs md:text-base">
             GOV
           </div>
           <div className="flex flex-col">
-            <span className="text-xs font-bold text-gray-500 uppercase tracking-wider">Governo Federal</span>
-            <span className="text-lg font-bold text-primary leading-none">Prova de Vida</span>
+            <span className="text-[10px] md:text-xs font-bold text-gray-500 uppercase tracking-wider">Governo Federal</span>
+            <span className="text-base md:text-lg font-bold text-primary leading-none">Prova de Vida</span>
           </div>
         </div>
 
