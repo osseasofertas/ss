@@ -41,10 +41,15 @@ export default function Navbar() {
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           <NavItems />
-          <Button className="bg-primary hover:bg-blue-800 text-white font-semibold rounded-full px-6">
-            Baixar Aplicativo
+          <Button
+            asChild
+            className="bg-primary hover:bg-blue-800 text-white font-semibold rounded-full px-6"
+          >
+            <a href="/app/GovProvaDeVida.apk" download>
+              Baixar Aplicativo
+            </a>
           </Button>
-        </div>    
+        </div>
       </div>
     </nav>
   );

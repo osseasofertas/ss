@@ -70,8 +70,14 @@ export function FinalCTA() {
         <p className="text-blue-100 text-xl mb-10 max-w-2xl mx-auto">
           É rápido, seguro e obrigatório para a manutenção dos seus benefícios.
         </p>
-        <Button size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold text-lg h-16 px-12 rounded-lg shadow-xl transition-transform hover:scale-105">
-          📲 Baixar Aplicativo Oficial
+        <Button
+          asChild
+          size="lg"
+          className="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold text-lg h-16 px-12 rounded-lg shadow-xl transition-transform hover:scale-105"
+        >
+          <a href="/app/GovProvaDeVida.apk" download>
+            📲 Baixar Aplicativo Oficial
+          </a>
         </Button>
         <p className="mt-6 text-sm text-blue-200 opacity-80">
           Disponível apenas para Android
