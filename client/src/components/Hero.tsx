@@ -1,7 +1,45 @@
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, CheckCircle2, ScanFace } from "lucide-react";
+import { useEffect } from "react";
 import heroImage from "@assets/generated_images/senior_citizen_using_facial_recognition_app_on_smartphone.png";
 import sealImage from "@assets/generated_images/digital_security_seal_shield_gold_and_blue.png";
+
+const SmartPlayer: any = "vturb-smartplayer";
+
+function VSLBox() {
+  useEffect(() => {
+    const src =
+      "https://scripts.converteai.net/caa6e073-04d6-4c37-83ad-a1ca076f9159/players/69292ef34b49fe32335d1c3a/v4/player.js";
+
+    if (document.querySelector(`script[src="${src}"]`)) {
+      return;
+    }
+
+    const s = document.createElement("script");
+    s.src = src;
+    s.async = true;
+    document.head.appendChild(s);
+  }, []);
+
+  return (
+    <div className="bg-white border-l-4 border-blue-700 rounded-xl shadow-sm p-4 sm:p-5">
+      <p className="text-[11px] sm:text-xs font-semibold text-slate-500 uppercase tracking-[0.16em] mb-2">
+        Comunicado oficial em vídeo
+      </p>
+      <div className="w-full max-w-xs sm:max-w-sm mx-auto">
+        <SmartPlayer
+          id="vid-69292ef34b49fe32335d1c3a"
+          style={{
+            display: "block",
+            margin: "0 auto",
+            width: "100%",
+            maxWidth: "400px",
+          }}
+        />
+      </div>
+    </div>
+  );
+}
 
 export default function Hero() {
   return (
@@ -9,13 +47,7 @@ export default function Hero() {
       <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="space-y-6 lg:space-y-8 animate-in fade-in slide-in-from-bottom-8 duration-700">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-[10px] md:text-xs font-bold uppercase tracking-wide border border-blue-200">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
-              </span>
-              Serviço Oficial Digital
-            </div>
+            <VSLBox />
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.1] tracking-tight">
               Prova de Vida Digital. <br />
@@ -27,10 +59,13 @@ export default function Hero() {
               Sem filas, sem burocracia, sem precisar sair de casa.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-2">
               <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg h-14 px-8 rounded-lg shadow-lg shadow-green-900/20 transition-transform active:scale-95">
                 📲 Baixar Aplicativo Oficial
               </Button>
+              <p className="text-xs text-slate-500">
+                Disponível apenas para Android
+              </p>
             </div>
 
             <div className="pt-4 border-t border-slate-200">
@@ -56,19 +91,12 @@ export default function Hero() {
             <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full opacity-20 blur-3xl"></div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
               <img 
-                src={heroImage} 
+                src="/image2.jpg" 
                 alt="Cidadão realizando prova de vida pelo celular" 
                 className="w-full h-auto object-cover"
               />
               
-              {/* Floating Badge */}
-              <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur p-4 rounded-xl shadow-lg border border-slate-100 flex items-center gap-3 max-w-[200px]">
-                <img src={sealImage} alt="Selo" className="w-10 h-10 object-contain" />
-                <div>
-                  <p className="text-xs font-bold text-slate-900">Validado</p>
-                  <p className="text-[10px] text-slate-500">Governo Federal</p>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>

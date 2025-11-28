@@ -7,9 +7,13 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="h-10 w-10 rounded bg-white flex items-center justify-center text-primary font-bold">
-                GOV
-              </div>
+            <div className="h-8 md:h-10 flex items-center">
+            <img
+              src="/image1.png"
+              alt="gov.br"
+              className="h-full w-auto"
+            />
+          </div>
               <div className="flex flex-col">
                 <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">Governo Federal</span>
                 <span className="text-lg font-bold text-white leading-none">Prova de Vida</span>
@@ -70,7 +74,7 @@ export function FinalCTA() {
           📲 Baixar Aplicativo Oficial
         </Button>
         <p className="mt-6 text-sm text-blue-200 opacity-80">
-          Disponível para Android e iOS
+          Disponível apenas para Android
         </p>
       </div>
     </section>
