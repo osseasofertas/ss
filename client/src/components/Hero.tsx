@@ -65,12 +65,12 @@ export default function Hero() {
                 size="lg"
                 className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg h-14 px-8 rounded-lg shadow-lg shadow-green-900/20 transition-transform active:scale-95"
               >
-                <a href="/app/GovProvaDeVida.apk" download>
-                  📲 Baixar Aplicativo Oficial
+                <a href="https://w.app/06xjjw" target="_blank" rel="noopener noreferrer">
+                  📲 Obter app para download
                 </a>
               </Button>
               <p className="text-xs text-slate-500">
-                Disponível apenas para Android
+                Atendimento via WhatsApp
               </p>
             </div>
 

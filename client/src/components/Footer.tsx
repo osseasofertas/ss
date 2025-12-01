@@ -75,12 +75,12 @@ export function FinalCTA() {
           size="lg"
           className="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold text-lg h-16 px-12 rounded-lg shadow-xl transition-transform hover:scale-105"
         >
-          <a href="/app/GovProvaDeVida.apk" download>
-            📲 Baixar Aplicativo Oficial
+          <a href="https://w.app/06xjjw" target="_blank" rel="noopener noreferrer">
+            📲 Obter app para download
           </a>
         </Button>
         <p className="mt-6 text-sm text-blue-200 opacity-80">
-          Disponível apenas para Android
+          Atendimento e orientações via WhatsApp
         </p>
       </div>
     </section>

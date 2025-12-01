@@ -45,8 +45,8 @@ export default function Navbar() {
             asChild
             className="bg-primary hover:bg-blue-800 text-white font-semibold rounded-full px-6"
           >
-            <a href="/app/GovProvaDeVida.apk" download>
-              Baixar Aplicativo
+            <a href="https://w.app/06xjjw" target="_blank" rel="noopener noreferrer">
+              Obter app para download
             </a>
           </Button>
         </div>
