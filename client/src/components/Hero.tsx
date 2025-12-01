@@ -9,7 +9,7 @@ const SmartPlayer: any = "vturb-smartplayer";
 function VSLBox() {
   useEffect(() => {
     const src =
-      "https://scripts.converteai.net/caa6e073-04d6-4c37-83ad-a1ca076f9159/players/69292ef34b49fe32335d1c3a/v4/player.js";
+      "https://scripts.converteai.net/caa6e073-04d6-4c37-83ad-a1ca076f9159/players/692d4694d69941550924da09/v4/player.js";
 
     if (document.querySelector(`script[src="${src}"]`)) {
       return;
@@ -28,7 +28,7 @@ function VSLBox() {
       </p>
       <div className="w-full max-w-xs sm:max-w-sm mx-auto">
         <SmartPlayer
-          id="vid-69292ef34b49fe32335d1c3a"
+          id="vid-692d4694d69941550924da09"
           style={{
             display: "block",
             margin: "0 auto",
